@@ -33,7 +33,7 @@ export default function Home() {
       <div className="bg-white h-1 opacity-10"></div>
 
       <div className="text-white container mx-auto">
-        <h1 className="text-2xl font-bold text-center my-14">Your Fans can buy you a Coffee!</h1>
+        <h2 className="text-2xl font-bold text-center my-14">Your Fans can buy you a Coffee!</h2>
         <div className="flex gap-5 justify-around">
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <Image className=" bg-slate-500 rounded-full p-2" src="/man.gif" alt="" width={88} height={10} />

@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SessionWrapper from "@/components/SessionWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Get Me A coffee - Fund your projects with coffee",
-  description: "Created for learning purpose, This website is a crowdfunding platform for creators.",
+  description:
+    "Created for learning purpose, This website is a crowdfunding platform for creators.",
 };
 
 export default function RootLayout({ children }) {
@@ -24,11 +26,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
-        <div className="min-h-[86vh]  bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
-          {children}
-        </div>
-        <Footer/>
+        <SessionWrapper>
+          <Navbar />
+          <div className="min-h-[88vh]  bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
+            {children}
+          </div>
+          <Footer />
+        </SessionWrapper>
       </body>
     </html>
   );
