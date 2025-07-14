@@ -37,18 +37,18 @@ export default function Home() {
         <div className="flex gap-5 justify-around">
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <Image className=" bg-slate-500 rounded-full p-2" src="/man.gif" alt="" width={88} height={10} />
-            <p className="font-bold">Fund Yourself</p>
-            <p className="text-center">Your fans are available for you to help you</p>
+            <p className="font-bold">Fans want to help</p>
+            <p className="text-center">Your fans are available to support you</p>
           </div>
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <Image className=" bg-slate-500 rounded-full p-2 unoptimized" src="/coin.gif" alt="" width={88} height={10} />
-            <p className="font-bold">Fund Yourself</p>
-            <p className="text-center">Your fans are available for you to help you</p>
+            <p className="font-bold">Fans want to contribute</p>
+            <p className="text-center">Your fans are willing to contribute financially</p>
           </div>
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <Image className=" bg-slate-500 rounded-full p-2 unoptimized" src="/group.gif" alt="" width={88} height={10} />
-            <p className="font-bold">Fans want to help</p>
-            <p className="text-center">Your fans are available for you to help you</p>
+            <p className="font-bold">Fans want to collaborate</p>
+            <p className="text-center">Your fans are ready to collaborate with you</p>
           </div>
         </div>
       </div>
